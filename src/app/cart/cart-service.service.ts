@@ -39,6 +39,9 @@ export class CartService {
   }
 
   calculateTotal(){
+    if(this.cartItems.length === 0){
+      this.total = 0
+    }
     this.cartItems.forEach(item => {
       this.total = item.price * item.quantity!
     });

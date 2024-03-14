@@ -23,10 +23,6 @@ export class CartListComponent implements OnInit, OnDestroy{
       this.total = total)
   }
 
-  Print(){
-    console.log("hej")
-  }
-
   ngOnDestroy() {
     this.cartItemsSubscription.unsubscribe(); 
   }

@@ -119,7 +119,6 @@ app-cart {
   font-size: 1.25rem;
 }
 
-
 .cart--item-list li:last-child {
   border-bottom: none;
 }
