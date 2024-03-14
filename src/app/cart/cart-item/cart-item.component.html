@@ -1,0 +1,7 @@
+<ng-template [ngIf]="item">
+        <img class="cart--item-icon" src="./../../../assets/icons/{{item.id}}.svg" alt="">
+        <p>{{item.name}}</p>
+        <button (click)="removeFromCart(item)" class="remove-btn center">-</button>
+        <p class="quantity-text">{{item.quantity}}</p>
+        <button (click)="addToCart(item)" class="add-btn center">+</button>
+</ng-template>

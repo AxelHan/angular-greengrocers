@@ -1,0 +1,9 @@
+<div class="cart--item-list-container">
+    <ul class="item-list cart--item-list">
+        <li *ngFor="let item of items">
+            <app-cart-item [item]="item"></app-cart-item>
+        </li>
+        <h2>Total: {{ total | currency: "EUR" }}</h2>
+    </ul>
+</div>
+
